@@ -22,7 +22,7 @@ fi
 
 (
     mv "${BUILD_DIR}/${APP_BASE}" "${STAGE}" &&
-    if [ ! -z "$DEPENDENCIES" ]; then
+    if [ ! -z "${DEPENDENCIES}" ]; then
         echo "Processing dependencies" | indent
         for DEPENDENCY in ${DEPENDENCIES}; do
             if [ ! -d "${BUILD_DIR}/${DEPENDENCY}" ]; then
